@@ -21,17 +21,21 @@ public class DataInit implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Disciplin disciplin1 = new Disciplin("Løb 100m", "Tid");
+        Disciplin disciplin1 = new Disciplin("Løb", "Tid");
         Disciplin disciplin2 = new Disciplin("Højdespring", "Meter");
+        Disciplin disciplin3 = new Disciplin("Svømning", "Tid");
+        Disciplin disciplin4 = new Disciplin("Spydkast", "Afstand");
 
         disciplinRepository.save(disciplin1);
         disciplinRepository.save(disciplin2);
+        disciplinRepository.save(disciplin3);
+        disciplinRepository.save(disciplin4);
 
 
-        Deltager deltager1 = new Deltager("John Doe", "Male", 25, "Athletics Club");
-        Deltager deltager2 = new Deltager("Jane Smith", "Female", 28, "Marathon Club");
-        Deltager deltager3 = new Deltager("Mike Johnson", "Male", 22, "Track Club");
-        Deltager deltager4 = new Deltager("Emily Davis", "Female", 30, "Throwers Club");
+        Deltager deltager1 = new Deltager("John Doe", "Male", 12, "Athletics Club");
+        Deltager deltager2 = new Deltager("Sarah Brown", "Female", 30, "Swimming Club");
+        Deltager deltager3 = new Deltager("Emma White", "Female", 26, "Gymnastics Club");
+        Deltager deltager4 = new Deltager("Jack Green", "Male", 23, "Soccer Team");
 
         deltagerRepository.save(deltager1);
         deltagerRepository.save(deltager2);
